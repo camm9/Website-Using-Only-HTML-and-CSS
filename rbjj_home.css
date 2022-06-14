@@ -25,23 +25,61 @@
         width: 100%;
       }
 
+      #logoImage {
+        width:100%;
+        
+      }
+
       /*Navigation Styles*/
+
+      li {
+        display: inline;
+        padding: 8px;
+        
+      }
+
+      li a {
+        color: red;
+      }
+
+      .active {
+        background-color: red;
+      }
+
+      a:hover {
+        background-color: rgb(240, 236, 236);
+      }
+
       header nav {
           display: block;
-          text-align: center;
+          background-color: black;
+          text-align: left;
           width: 100%;
+          padding: 0.5em;
+          
+
       }
       
       header nav ul {
-          display: block;
+          list-style-type: none;
+        position: -webkit-sticky;
+        position: sticky;
+          top: 0;
+          width: 100%;
       }
+ #navImage {
+    width: 50px;
+    height: 50px;
 
+ }
+
+/*Article Styles*/
       article {
           width: 80%;
       }
- /*Article Styles*/
       article h1 {
           text-align: center;
+          font-size: 2em;
       }
 
  /*Aside Styles*/      
@@ -49,15 +87,26 @@
           float: right;
           width:20%;
         }
+
+#affiliateImage {
+    position: sticky;
+    position: -webkit-sticky;
+}
 /*Footer Styles*/
 
-        footer h1 {
-            text-align: center;
-        }
-        
-        footer {
-            text-align: center;
-            width:100%;
-            
-        }
-        
+
+footer {
+    text-align: center;
+    width:100%;
+    padding: 0%;
+    margin: 0%;
+    font-size: 0.5em;
+    padding-bottom: 1%;
+    
+}
+
+footer h1 {
+    text-align: center;
+    padding: 0%;
+    
+}
