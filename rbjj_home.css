@@ -78,8 +78,10 @@
           width: 80%;
       }
       article h1 {
+          color: black;
           text-align: center;
           font-size: 2em;
+          text-shadow: grey 2px 2px 5px;
       }
 
  /*Aside Styles*/      
@@ -106,7 +108,9 @@ footer {
 }
 
 footer h1 {
+  color: black;
     text-align: center;
     padding: 0%;
-    
+    font-size: 2em;
+    text-shadow: grey 2px 2px 4px;
 }
