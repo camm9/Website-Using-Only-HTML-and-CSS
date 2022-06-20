@@ -17,65 +17,67 @@
           font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       }
 
+
       body {
           background-color: white;
+          text-align: center;
       }
 
       header {
-        width: 100%;
+        background-color: black;
       }
 
       #logoImage {
-        width:100%;
+        background-color: black;
+        height: 400px;
         
       }
 
       /*Navigation Styles*/
 
-      li {
-        display: inline;
-        padding: 8px;
-        
-      }
-
       li a {
-        color: red;
+        display: block;
+        color: black;
+        text-decoration: none;
+        padding: 10px;
       }
 
       .active {
         background-color: red;
       }
 
-      a:hover {
+nav.horizontal a:hover {
         background-color: rgb(240, 236, 236);
       }
 
       header nav {
           display: block;
-          background-color: grey;
+          background-color: white;
           text-align: left;
-          width: 100%;
-          padding: 0.5em;
-          
-      }
-      
-      header nav ul {
-          list-style-type: none;
-        position: -webkit-sticky;
-        position: sticky;
-          top: 0;
-          width: 100%;
-      }
- #navImage {
-    width: 50px;
-    height: 50px;
+          width: 100%; 
+      }      
 
- }
+nav.horizontal li{
+  display: block;
+  float: left;
+}
+
+nav.horizontal a {
+  display: block;
+  text-align: center;
+}
+
+#navImage {
+   display: block;
+   width: 50px;
+   height: 50px;
+   text-align: center;
+}
 
 /*Article Styles*/
   
 article { 
-  width: 80%;
+  text-align: center;
 }
 
 article h1 {
@@ -87,42 +89,65 @@ article h1 {
 
 .latestVideos {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 50% 50%;
-  grid-gap: 10px;
+  grid-gap: 5px;
+ 
  
 }
 
 .videoHeader {
-  grid-column: 3;
-  grid-row:1;
+  grid-column: 2;
   
 }
 
 .video1 {
-  grid-column: 1/2;
-  grid-row:2/-2
+  grid-column: 1;
+  grid-row:2
 }
 .video2 {
-  grid-column:3/4;
-  grid-row:2/-2
+  grid-column:2;
+  grid-row:2
 }
 .video3 {
-  grid-column:5/6;
-  grid-row:2/-2
+  grid-column:3;
+  grid-row:2
+}
+
+/*Storefront*/
+.storeFront  {
+text-align: center;
+text-justify: center;
+}
+
+#firstProduct li {
+  list-style-type: none;
+}
+
+
+.storeFrontHeader{
+
+
+}
+
+.storeFrontProducts {
+
 }
 
 
  /*Aside Styles*/      
 aside {
-  float: right;
-  width:20%;
+
 }
 
 #affiliateImage {
+  display: block;
+
     position: sticky;
     position: -webkit-sticky;
 }
+
+
 /*Footer Styles*/
 
 
@@ -133,7 +158,7 @@ footer {
     margin: 0%;
     font-size: 0.5em;
     padding-bottom: 1%;
-    
+  
 }
 
 footer h1 {
@@ -142,4 +167,14 @@ footer h1 {
     padding: 0%;
     font-size: 2em;
     text-shadow: grey 1px 1px 5px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer::after {
+  clear: both;
+  content: "";
+  display: table;
 }
