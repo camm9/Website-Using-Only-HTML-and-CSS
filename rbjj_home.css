@@ -12,67 +12,57 @@
       */
 /*HTML and Body Styles*/
 
-      html {
-          background-color: grey;
-          font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      }
+html {
+  background-color: grey;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
 
-      body {
-          background-color: white;
-          text-align: center;
-      }
+body {
+  background-color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
 
-      header {
-        background-color: black;
-      }
+header {
+  background-color: black;
+}
 
-      #logoImage {
-        background-color: black;
-        height: 400px;
+#logoImage {
+  background-color: black;
+  height: 400px;
         
-      }
+}
 
-      /*Navigation Styles*/
+/*Navigation Styles*/
 
-      li a {
-        display: block;
-        color: black;
-        text-decoration: none;
-        padding: 10px;
-      }
+li a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
 
-      .active {
-        background-color: red;
-      }
+
 
 nav.horizontal a:hover {
-        background-color: rgb(240, 236, 236);
-      }
+  background-color: rgb(240, 236, 236);
+}
 
-      header nav {
-          display: block;
-          background-color: white;
-          text-align: left;
-          width: 100%; 
-      }      
+nav {
+  background-color: white;
+  text-align: left;
+  width: 100%; 
+}      
 
 nav.horizontal li{
-  display: block;
   float: left;
 }
 
 nav.horizontal a {
-  display: block;
   text-align: center;
 }
 
-#navImage {
-   display: block;
-   width: 50px;
-   height: 50px;
-   text-align: center;
-}
 
 /*Article Styles*/
   
@@ -85,12 +75,19 @@ article h1 {
     text-align: center;
     font-size: 2em;
     text-shadow: grey 1px 1px 5px;
+    vertical-align: middle;
+    
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: 0;
+
 }
 
 .latestVideos {
+  padding-top: 5em;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 1fr 2fr;
   grid-gap: 5px;
  
  
@@ -115,30 +112,41 @@ article h1 {
 }
 
 /*Storefront*/
-.storeFront  {
-text-align: center;
-text-justify: center;
-}
 
-#firstProduct li {
-  list-style-type: none;
-}
+#storeFrontID h1 {
 
-
-.storeFrontHeader{
+padding-top: 2em;
 
 
 }
 
-.storeFrontProducts {
-
+.storeFront {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 25% 75%;
+  grid-gap: 5px;
 }
 
+li.productOne a:hover {
+  filter:contrast(85%)
+}
+
+.storeFront h1 {
+  grid-column: 2;
+  
+}
+
+.product1 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+li {
+list-style-type: none;
+}
+  
 
  /*Aside Styles*/      
-aside {
-
-}
 
 #affiliateImage {
   display: block;
@@ -177,4 +185,13 @@ footer::after {
   clear: both;
   content: "";
   display: table;
+}
+
+
+body > * {
+  outline: 2px dashed red;
+}
+
+section > * {
+  outline: 2px dashed blue;
 }
