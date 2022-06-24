@@ -111,13 +111,24 @@ article h1 {
   grid-row:2
 }
 
+article iframe {
+  border-radius: 30px;
+}
+
 /*Storefront*/
 
 #storeFrontID h1 {
-
 padding-top: 2em;
 
+}
 
+#storeFrontID h4 {
+  margin: 0;
+  padding: 0;
+}
+
+#storeFrontID h6 {
+  margin:0px;
 }
 
 .storeFront {
@@ -131,7 +142,7 @@ li.productOne a:hover {
   filter:contrast(85%)
 }
 
-.storeFront h1 {
+.storeFront h1{
   grid-column: 2;
   
 }
@@ -141,11 +152,24 @@ li.productOne a:hover {
   grid-row: 2;
 }
 
+
+
 li {
 list-style-type: none;
+
 }
   
+li h6 {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
+li a {
+  padding:0.3;
+}
+
+li img{
+  border-radius: 30px;
+}
  /*Aside Styles*/      
 
 #affiliateImage {
@@ -179,6 +203,13 @@ footer h1 {
 
 footer a {
   text-decoration: none;
+  color: grey;
+  padding: 1em;
+  font-size: small;
+}
+
+footer a:hover {
+  filter:grayscale(85%)
 }
 
 footer::after {
