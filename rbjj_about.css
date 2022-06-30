@@ -94,7 +94,14 @@ nav.horizontal > a {
 .sidebar p {
     background-color: rgb(240, 236, 236, 0.8);
     border-radius: 30px;
+    padding: 1em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
+}
+
+.sidebar img{
+    border-radius: 30px;
+    background-position: -100px 0px;
 }
 
 
@@ -130,8 +137,18 @@ nav.horizontal > a {
     grid-area: txt;
     background-color: rgb(240, 236, 236, 0.8);
     border-radius: 30px;
-   
+    padding: 1em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
 }
+
+.media h1{
+    grid-area: img;
+    margin:0;
+}
+
+
+
+
 
 
 
