@@ -88,6 +88,7 @@ nav.horizontal > a {
 .sidebar {
     grid-area: as;
     margin-right: 1em;
+    padding-top: 5em;
     
 }
 
@@ -96,12 +97,12 @@ nav.horizontal > a {
     border-radius: 30px;
     padding: 1em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    text-align: justify;
 }
 
 .sidebar img{
     border-radius: 30px;
-    background-position: -100px 0px;
+    
 }
 
 
@@ -111,12 +112,15 @@ nav.horizontal > a {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     
+    
     grid-template-areas:
       "hd hd hd"
       "img txt as"
       "img txt as"
       "ft ft ft";
 }
+
+
 
 .media {
     display: grid;
@@ -125,12 +129,12 @@ nav.horizontal > a {
     margin-bottom: 1em;
     margin-right: 2em;
     margin-top: 4em;
-   
-   
 }
+
 .media img{
     grid-area: img;
     border-radius: 30px;
+    justify-self: center;
 }
 
 .media p{
@@ -138,6 +142,9 @@ nav.horizontal > a {
     background-color: rgb(240, 236, 236, 0.8);
     border-radius: 30px;
     padding: 1em;
+    justify-self: center;
+    text-align: justify;
+    
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
 }
 
@@ -155,6 +162,18 @@ nav.horizontal > a {
 
 
 /*Article Styles*/
+article h1 {
+    color: black;
+      text-align: center;
+      padding: 0%;
+      font-size: 2em;
+      text-shadow: grey 1px 1px 5px;
+  }
+
+article > h1{
+    padding-top: 2em;
+    margin: 0%;
+}
 
 
 /*Aside Styles*/

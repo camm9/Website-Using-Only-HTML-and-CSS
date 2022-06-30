@@ -23,74 +23,99 @@
    </head>
 
 <body>
-   <header>
-      <img src="assets/logoBanner.png" id="logoImage" alt="Banner" />
+   <div class="wrapper">
 
-   </header>
-
-    <nav class="horizontal">
-      <ul>
-               
-         <li><a href="#">Store</a></li>
-         <li><a href="#">About</a></li>
-         <li><a href="#">Events</a></li>
-         <li><a href="#">Services</a></li>
-         <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
-
-<article>
-
+      <div class="header">
+         <header>
+            <img src="assets/logoBanner.png" id="logoImage" alt="Banner" />
       
-      <div class="latestVideos">
-         <h1 class="videoHeader">Our Latest Videos</h1>
-         <div class="video1">
-            <iframe width="250" height="150" src="https://www.youtube.com/embed/mzCSN4b2EU4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         </div>
-         <div class="video2">
-            <iframe width="250" height="150" src="https://www.youtube.com/embed/xbP9RBzRDiU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         </div>
-         <div class="video3">
-            <iframe width="250" height="150" src="https://www.youtube.com/embed/hKbxW6LYoQU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </header>
+      
+          <nav class="horizontal">
+            <ul>
+                     
+               <li><a href="#">Store</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Events</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Contact</a></li>
+          </ul>
+      </nav>
       </div>
+   
+      
+      
+      <div class="content">
+            <article>
+            <div class="media">
+            <div class="videoHeader"><h1> Our Latest Videos</h1></div>
+               <div class="videos">
 
- 
-  
-
-
-   <div class="storeFront">
-      <h1>Our Products</h1>
-      <div class="product1">
-         <ul>
-            <li class="productOne"> 
-               <a href="#"><img src="assets/product.jpeg" id="productImage" width="250" height="250"></a>
-               <a href="#"><h4>The Original Gi</h4></a>
-               <h6>$160.00 USD</h6>
-            </li>
-         </ul>
+                  <iframe width="250" height="150" src="https://www.youtube.com/embed/mzCSN4b2EU4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               
+               
+                  <iframe width="250" height="150" src="https://www.youtube.com/embed/xbP9RBzRDiU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               
+               
+                  <iframe width="250" height="150" src="https://www.youtube.com/embed/hKbxW6LYoQU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
          </div>
+   
+         <div class="products">
+         <div class="productHeader"> 
+            <h1>Our Products</h1>
+         </div>
+         <div class="productItem">
+            <ul>
+               <li class="imageLink"> 
+                  <a href="#" ><img src="assets/product.jpeg"  width="250" height="250"></a>
+                  <a href="#"><h4>The Original Gi <br> $160.00 USD</h4></a>
+               </li>
+            </ul>
+
+         </div>
+         </article>
+            </div>
+   
+   
+   <div class="sidebar">
+      <aside>
+         <div class="affiliates">
+            <div class="affiliateHeader">
+
+               <h1>Our Affiliates</h1>
+            </div>
+            
+            <div class="affiliateItems">
+               <ul>
+                  <li class="imageLink"> 
+                     <a href="https://phalanxfc.com/?ref=resenha" ><img src="assets/phalanx.png"  width="250" ></a>
+                  </li>
+               
+                  <li class="imageLink" > 
+                     <a href="https://www.iron-neck.com/?rfsn=6564888.517789&utm_source=refersion&utm_medium=affiliate&utm_campaign=6564888.517789" ><img src="assets/AffiliateSquare.jpg"  width="250" ></a>
+                  </li>
+                  <li class="imageLink" > 
+                     <a href="https://www.bellsofsteel.com/#a_aid=resenha" ><img src="assets/bellsofsteel.jpg"  width="250" ></a>
+                  </li>
+               </ul>
+            </div>
+
+         </div>
+
+
+      </aside>
       </div>
-
-    <div id="affiliateBanner">
-       <a href="https://www.iron-neck.com/?rfsn=6564888.517789&utm_source=refersion&utm_medium=affiliate&utm_campaign=6564888.517789"> <img src="assets/AffiliateBanner.jpg" id="affliateImage" alt="Iron Neck Affiliate" /> </a>
-       <!--Figure out how to link to the dynamic banner from Iron Neck Official
-       <script type="text/javascript" src="//cdn.refersion.com/creative.js"><img src="assets/AffiliateBanner.jpg" id="affliateImage" alt="Iron Neck Affiliate" /></script>
-       <script>$rfsn_creative.generate('refersion_client/31261/creatives/dynamic/39781-b3c82659d858408702ef7170cf130a8a.json', {aid: '6564888.517789'});</script><div id="rfsn_img_39781"></div>
-                               
-          -->
-    </div>
-</article>
-
-<aside>
-</aside>
-
-   <footer>
-      <h1>Find Us At</h1>
-      <p>
-         <a href="https://www.youtube.com/channel/UCzXnpyaEPI4PVCCzCV_lJAQ"><img src="assets/youtubelogo.png" width="25px"></a>
-         <a href="https://www.instagram.com/resenha_bjj/"><img src="assets/instalogo.png" width="20px"> </a>
-         <a href="mailto:resenhabjj.info@gmail.com"><img src="assets/maillogo.png" width="23px"></a>
-      </p>
-
-   </footer>
+   
+   <div class="footer">
+      <footer>
+            <h1>Find Us At</h1>
+            <p>
+               <a href="https://www.youtube.com/channel/UCzXnpyaEPI4PVCCzCV_lJAQ"><img src="assets/youtubelogo.png" width="25px"></a>
+               <a href="https://www.instagram.com/resenha_bjj/"><img src="assets/instalogo.png" width="20px"> </a>
+               <a href="mailto:resenhabjj.info@gmail.com"><img src="assets/maillogo.png" width="23px"></a>
+            </p>
+      </footer>
+   </div>   
+</div>
 </body>   
