@@ -101,8 +101,8 @@ nav.horizontal > a {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr .5fr 1fr;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
  
   
   
@@ -142,6 +142,8 @@ nav.horizontal > a {
 
 .productItem{
   grid-area: prod;
+
+ 
 }
 
 
@@ -153,26 +155,22 @@ nav.horizontal > a {
   "prod prod prod";
 }
 
-.affiliateHeader{
-  grid-area: hea;
+.affiliates {
+  
 }
 
-.affiliateItems{
-  grid-area: aff;
+ul.affiliateItems{
+  text-align: center;
+  padding: 1em;
+  
+}
 
+ul.affiliateItems > li{
+  display: inline-block;
 }
 
 
 
-
-
-.affiliates{
-  display: grid;
-
-  grid-template-areas: 
-  "hea hea hea"
-  "aff aff aff";
-}
 
 .imageLink a:hover {
   filter:contrast(85%)
