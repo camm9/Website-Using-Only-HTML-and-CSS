@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/*
+         CSIS 1280 Multimedia Web Development
+   
+         Project: Resenha BJJ Website
+         Author: Catherine Methven
+         Date:   June 8 2022
+   
+         Filename: rbjj_store.css
+   
+      */
+/*HTML and Body Styles*/
+
+html {
+    background-color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  
+  body {
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: black;
+  }
+  
+  #logoImage {
+    background-color: black;
+    height: 400px;
+          
+  }
+  
+  h1 {
+    color: black;
+      text-align: center;
+      padding: 0%;
+      font-size: 2em;
+      text-shadow: grey 1px 1px 5px;
+  }
+  
+  li img {
+    border-radius: 30px;
+  }
+  
+  /*Navigation Styles*/
+  
+  li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+  
+  }
+  
+  li {
+      list-style-type: none;
+      }
+  
+  
+  nav.horizontal a:hover {
+    background-color: rgb(240, 236, 236);
+  }
+  
+  nav {
+    background-color: white;
+    text-align: left;
+    width: 100%; 
+    float: left;
+  }      
+  
+  nav.horizontal li{
+    float: left;
+  }
+  
+  nav.horizontal > a {
+    text-align: center;
+  }
+  
+  /*Grid Styles*/
+  
+
+   
+
+ 
+
+
+
+
+  /*Footer Styles*/
+
+
+  footer {
+    width:100%;
+    padding: 0%;
+    margin: 0%;
+    font-size: 0.5em;
+    padding-bottom: 0%;
+  }
+  
+  footer h1 {
+  color: black;
+    text-align: center;
+    padding: 0%;
+    font-size: 2em;
+    text-shadow: grey 1px 1px 5px;
+  }
+  
+  footer a {
+  text-decoration: none;
+  color: grey;
+  padding: 1em;
+  font-size: small;
+  }
+  
+  footer a:hover {
+  filter:grayscale(85%)
+  }
+  
+  footer::after {
+  clear: both;
+  content: "";
+  display: table;
+  }
+  
+  
+  body > * {
+    outline: 2px dashed red;
+  }
+  
+  section > * {
+    outline: 2px dashed blue;
+  }
+
+  div > * {
+      outline: 2px dashed green;
+  }

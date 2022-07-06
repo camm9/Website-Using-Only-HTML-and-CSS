@@ -35,6 +35,14 @@ header {
         
 }
 
+h1{
+  color: black;
+  text-align: center;
+  padding: 0%;
+  font-size: 2em;
+  text-shadow: grey 1px 1px 5px;
+}
+
 /*Navigation Styles*/
 
 li a {
@@ -87,89 +95,51 @@ article h1 {
 
 .latestVideos {
   
-  display: grid;
+  display: flex;
   margin: 0 auto;
   min-width: 940px;
- 
-}
-
-.videoHeader {
-  grid-column: 2;
+  justify-content: center;
   
 }
 
-.video1 {
-  grid-column: 1;
-  grid-row:2;
-}
-.video2 {
-  grid-column:2;
-  grid-row:2;
-}
-.video3 {
-  grid-column:3;
-  grid-row:2;
+.latestVideos > iframe {
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
-article iframe {
+
+iframe {
   border-radius: 30px;
 }
 
 /*Storefront*/
 
-#storeFrontID h1 {
-padding-top: 2em;
-
+.storeFront {
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
 
-#storeFrontID h4 {
-  margin: 0;
+.storeFront > ul{
+  margin: 0%;
   padding: 0;
 }
 
-#storeFrontID h6 {
-  margin:0px;
+.storeFront > ul > li{
+  margin: 0%;
+  padding: 0;
 }
 
-.storeFront {
-  display: grid;
-grid-row: auto;
-grid-template-areas: 
-"left middle right"
-"sleft smiddle sright";
-  grid-gap: 0.5em;
-  margin: 0 auto;
-  min-width: 940px;
+.storeFront h4, h6, a {
 
-
-}
-
-
-
-
-li.productOne a:hover {
-  filter:contrast(85%)
-}
-li.productTwo a:hover {
-  filter:contrast(85%)
-}
-
-li.productThree a:hover {
-  filter:contrast(85%)
-}
-
-.storeFront h1{
-  grid-area: middle;
-
+    margin: 0%;
+    padding: 0;
   
 }
 
-.productOne {
-grid-area: smiddle;
-
+li a:hover {
+  filter:contrast(85%)
 }
-
-
 
 
 
@@ -189,8 +159,15 @@ li a {
 li img{
   border-radius: 30px;
 }
- /*Aside Styles*/    
+ /*Aside Styles*/   
 
+.affiliates {
+  display: flex;
+  margin: 0 auto;
+  min-width: 940px;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
@@ -201,10 +178,9 @@ li img{
 footer {
     text-align: center;
     width:100%;
-    padding: 0%;
-    margin: 0%;
     font-size: 0.5em;
     padding-bottom: 1%;
+    padding-top: 3em;
  
   
 }
@@ -235,10 +211,3 @@ footer::after {
 }
 
 
-body > * {
-  outline: 2px dashed red;
-}
-
-section > * {
-  outline: 2px dashed blue;
-}

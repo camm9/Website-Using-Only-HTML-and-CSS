@@ -7,7 +7,7 @@
          Author: Catherine Methven
          Date:   June 8 2022
    
-         Filename: rbjj_home.css
+         Filename: rbjj_hometest.css
    
       */
 /*HTML and Body Styles*/
@@ -102,7 +102,8 @@ nav.horizontal > a {
 .wrapper {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr .5fr .5fr;
+
  
   
   
@@ -142,8 +143,7 @@ nav.horizontal > a {
 
 .productItem{
   grid-area: prod;
-
- 
+  height: 350px;
 }
 
 
@@ -155,18 +155,22 @@ nav.horizontal > a {
   "prod prod prod";
 }
 
-.affiliates {
-  
-}
+
+
+
 
 ul.affiliateItems{
   text-align: center;
   padding: 1em;
+
   
 }
 
 ul.affiliateItems > li{
   display: inline-block;
+  height: 250px;
+  vertical-align: middle;
+
 }
 
 
@@ -181,7 +185,6 @@ ul.affiliateItems > li{
 
 
 footer {
-  text-align: center;
   width:100%;
   padding: 0%;
   margin: 0%;
