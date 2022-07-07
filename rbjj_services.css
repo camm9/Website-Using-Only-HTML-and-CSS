@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/*
+         CSIS 1280 Multimedia Web Development
+   
+         Project: Resenha BJJ Website
+         Author: Catherine Methven
+         Date:   June 8 2022
+   
+         Filename: rbjj_services.css
+*/
+
+/* Table Styles */
+table.services{
+    background: rgb(231, 230, 230);
+    border: 0.25em outset black;
+    font-size: 1vw;
+    width: 30%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: auto;
+
+}
+.services{
+    margin-left: auto;
+    margin-right: auto;
+}
+table.services th, table.services td{
+    border: 1px solid black;
+    padding: .75em;
+    
+
+}
+
+tr:hover {
+    background-color: white;
+}
+
+/* HTML and Body Styles */
+
+p > a {
+    text-decoration: none;
+}

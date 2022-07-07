@@ -15,21 +15,87 @@
 /* Grid Styles */
 
 .grid {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 500px 500px;
-  min-width: none;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+  text-align: center;
 }
 
-.sidebar {
-  grid-column: 3;
-  grid-row: 1/2;
+.grid p {
+  background-color: rgb(215, 215, 215);
+  opacity: 80%;
+  border-radius: 30px;
+  width: 40%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 10px;
+  margin: 0;
+  position: relative;
+  left: 29%;
+  
 }
 
-.Cath {
-  grid-row: 2;
+.grid h4{
+  font-weight: lighter;
 }
 
-.Marcio {
-  grid-column: 1;
+/* HTML and Body styles */
+
+section > img, div > img {
+  border-radius: 30px;
 }
+
+/* Article Styles */
+article {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+/* Aside Styles */
+
+aside  p {
+  background-color: rgb(215, 215, 215);
+  opacity: 80%;
+  border-radius: 30px;
+  width: 20%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 10px;
+  margin: 0;
+  position: relative;
+  left: 39%;
+  
+}
+
+
+
+aside>section>img {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 480px){
+  .responsive {
+    max-width:40%;
+    height: auto;
+  }
+
+  .grid {
+    display: inline;
+  }
+
+ 
+}
+
+/* body > * {
+  outline: 2px dashed red;
+}
+
+section > * {
+  outline: 2px dashed blue;
+}
+
+div > * {
+    outline: 2px dashed green;
+} */
