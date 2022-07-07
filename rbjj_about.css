@@ -12,216 +12,24 @@
       */
 /*HTML and Body Styles*/
 
-html {
-  background-color: grey;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+/* Grid Styles */
+
+.grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 500px 500px;
+  min-width: none;
 }
 
-
-body {
-  background-color: white;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: black;
-}
-
-#logoImage {
-  background-color: black;
-  height: 400px;
-        
-}
-
-/*Navigation Styles*/
-
-li a {
-  color: black;
-  text-decoration: none;
-  padding: 10px;
-
-}
-
-li {
-    list-style-type: none;
-    }
-
-
-nav.horizontal a:hover {
-  background-color: rgb(240, 236, 236);
-}
-
-nav {
-  background-color: white;
-  text-align: left;
-  width: 100%; 
-  float: left;
-}      
-
-nav.horizontal li{
-  float: left;
-}
-
-nav.horizontal > a {
-  text-align: center;
-}
-
-
-/*Grid Styles*/
-
-.header {
-    grid-area: hd;
-}
-.footer {
-    grid-area: ft;
-}
-.content {
-    grid-area: txt;
-    justify-content: center;
-}
-
-.content.media {
-    grid-area: img;
-}
 .sidebar {
-    grid-area: as;
-    margin-right: 1em;
-    padding-top: 5em;
-    
+  grid-column: 3;
+  grid-row: 1/2;
 }
 
-.sidebar p {
-    background-color: rgb(240, 236, 236, 0.8);
-    border-radius: 30px;
-    padding: 1em;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: justify;
+.Cath {
+  grid-row: 2;
 }
 
-.sidebar img{
-    border-radius: 30px;
-    
-}
-
-
-
-
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    
-    
-    grid-template-areas:
-      "hd hd hd"
-      "img txt as"
-      "img txt as"
-      "ft ft ft";
-}
-
-
-
-.media {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "img txt";
-    margin-bottom: 1em;
-    margin-right: 2em;
-    margin-top: 4em;
-}
-
-.media img{
-    grid-area: img;
-    border-radius: 30px;
-    justify-self: center;
-}
-
-.media p{
-    grid-area: txt;
-    background-color: rgb(240, 236, 236, 0.8);
-    border-radius: 30px;
-    padding: 1em;
-    justify-self: center;
-    text-align: justify;
-    
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
-}
-
-.media > h4 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin: 0;
-  /*fix resizing window issue*/
-}
-
-
-
-
-
-
-
-
-/*Article Styles*/
-article h1 {
-    color: black;
-      text-align: center;
-      padding: 0%;
-      font-size: 2em;
-      text-shadow: grey 1px 1px 5px;
-  }
-
-article > h1{
-    padding-top: 2em;
-    margin: 0%;
-}
-
-
-/*Aside Styles*/
-
-
-/*Footer Styles*/
-
-
-footer {
-    text-align: center;
-    width:100%;
-    padding: 0%;
-    margin: 0%;
-    font-size: 0.5em;
-    padding-bottom: 1%;
-  
-}
-
-footer h1 {
-  color: black;
-    text-align: center;
-    padding: 0%;
-    font-size: 2em;
-    text-shadow: grey 1px 1px 5px;
-}
-
-footer a {
-  text-decoration: none;
-  color: grey;
-  padding: 1em;
-  font-size: small;
-}
-
-footer a:hover {
-  filter:grayscale(85%)
-}
-
-footer::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-
-body > * {
-  outline: 2px dashed red;
-}
-
-section > * {
-  outline: 2px dashed blue;
+.Marcio {
+  grid-column: 1;
 }

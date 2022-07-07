@@ -106,9 +106,11 @@ html {
 
 article {
   text-align: center;
+  margin-top: 6em;
+  margin-bottom: 6em;
 
 }
-article > img {
+article  img {
   border-radius: 30px;
 }
 
@@ -127,6 +129,22 @@ article  p {
 
   margin-top: 0%;
 }
+
+.card {
+
+  position: relative;
+  display: inline-block;
+}
+.card .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.card:hover .img-top {
+  display: inline;
+}
  
 
 
@@ -139,7 +157,6 @@ article  p {
     padding: 0%;
     margin: 0%;
     font-size: 0.5em;
-    padding-bottom: 0%;
   }
   
   footer h1 {
@@ -168,7 +185,7 @@ article  p {
   }
   
   
-  body > * {
+  /* body > * {
     outline: 2px dashed red;
   }
   
@@ -178,4 +195,4 @@ article  p {
 
   div > * {
       outline: 2px dashed green;
-  }
+  } */
