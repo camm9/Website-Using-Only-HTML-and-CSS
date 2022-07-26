@@ -35,11 +35,11 @@
            <nav class="horizontal">
              <ul>
                       
-                <li><a href="rbjj_store.html">Store</a></li>
-                <li><a href="rbjj_about.html">About</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+               <li><a href="rbjj_store.html">Store</a></li>
+               <li><a href="rbjj_about.html">About</a></li>
+               <li><a href="#">Events</a></li>
+               <li><a href="rbjj_services.html">Services</a></li>
+               <li><a href="rbjj_contact.html">Contact</a></li>
            </ul>
        </nav>
     
@@ -69,8 +69,69 @@
        <br>
        <br>
        Pant: 10oz RipStop Cotton
+       <br>
+       <br>
+       This item is currently out-of-stock and we are only taking pre-orders at this moment.
+       <br>Please register your interest by filling out the form below.
+
       </p>
    </div>
+
+   
+</div>
+
+
+   <div class="row">
+      <div class="col-75">
+        <div class="container">
+          <form action="#" method="post">
+            <fieldset>
+
+               <div class="row">
+                 <div class="col-50">
+                   <h3> <legend>Register Interest</legend></h3>
+                  <p>Select a Colour: </p>
+                  <input name="Colour" id="giColour" type="radio" />
+                  <label for="Colour">White</label>
+                  <input name="Colour" id="giColour" type="radio" />
+                  <label for="Colour">Blue</label>
+                  <p>Select a Size: </p>
+                  <input name="giSize" id="giSize" type="radio" />
+                  <label for="giSize">Small</label>
+                  <input name="giSize" id="giSize" type="radio" />
+                  <label for="giSize">Medium</label>
+                  <input name="giSize" id="giSize" type="radio" />
+                  <label for="giSize">Large</label>
+                  <br>
+                  <br>
+                   <label id="inputLabel" for="name"> Full Name</label>
+                   <input type="text" id="name" name="name" placeholder="First Name Last Name" required maxlength="45">
+                   <label id="inputLabel" for="email"> Email</label>
+                   <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                   <label id="inputLabel" for="adr">Address</label>
+                   <input type="text" id="adr" name="address" placeholder="### Street Name" required>
+                   <label  id="inputLabel" for="city"> City</label>
+                   <input type="text" id="city" name="city" placeholder="New York" required>
+       
+                   <div class="row">
+                     <div class="col-50">
+                       <label id="inputLabel" for="state">State</label>
+                       <input type="text" id="state" name="state" placeholder="NY" required>
+                     </div>
+                     <div class="col-50">
+                       <label id="inputLabel" for="zip">Zip</label>
+                       <input type="text" id="zip" name="zip" placeholder="10001(-1000)" required pattern="^\d{5}(-\d{4})?$">
+                     </div>
+                   </div>
+                 </div>
+       
+                
+               <input type="submit" value="Register Interest" class="btn">
+             </form>
+           </div>
+         </div>
+            </fieldset>
+    
 
 </div>
 </article>

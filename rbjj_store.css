@@ -42,7 +42,7 @@ html {
       font-size: 2em;
       text-shadow: grey 1px 1px 5px;
   }
-  
+ 
 
   
   /*Navigation Styles*/
@@ -184,6 +184,56 @@ article  p {
   display: table;
   }
   
+
+  /*Form Sytles */
+  form{
+    width: 35%;
+    display: inline-block;
+    padding: 20px;
+  }
+  
+  input {
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.08);
+
+  }
+
+  input[type=submit]{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding:15px;
+    width: 100%;
+    font-size: x-large;
+  }
+
+  input[type=submit]:hover{
+    background-color: grey;
+    
+  }
+
+  input[type=text], input[type=email] {
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  #inputLabel {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
   
   /* body > * {
     outline: 2px dashed red;
