@@ -15,10 +15,9 @@ Create a size chart for product that pops up in a window??
 
 */
 
-function popupTogger()
+function popupToggle()
 {
-    const pop = document.getElementById('popup');
+    const popup = document.getElementById('popup');
     popup.classList.toggle('active')
 }
 
-console.log("JS file linked")

@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+/*
+         CSIS 1280 Multimedia Web Development
+   
+         Project: Resenha BJJ Website
+         Author: Catherine Methven
+         Date:   June 8 2022
+   
+         Filename: rbjj_contact.css
+   
+      */
+
+      /*Body Styles*/
+/* *
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+
+} */
+
+.btn 
+{
+    position:relative;
+    padding: 15px 20px;
+    background: grey;
+    font-size: 1vh;
+    display:inline-block ;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: 5;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border-radius: 30px;
+
+}
+
+.btn:hover
+{
+    letter-spacing: 4px;
+}
+
+#popup
+{
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    background: white;
+    width: 450px;
+    padding: 80px 50px 50px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    transition: 1s;
+    visibility: hidden;
+    border-radius: 30px;
+
+}
+
+#popup.active
+{
+    visibility: visible;
+    top: 50%;
+}
+
+#popup .content, #popup form
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#popup .content img 
+{
+    max-width: 80px;
+}
+
+#popup .content h2
+{
+    font-size: 5vh;
+    font-weight: 5;
+    color: #333;
+    margin: 20px 0 10px;
+
+}
+
+#popup .content p
+{
+    text-align: center;
+    font-size: 2vh;
+    color: #333;
+
+}
+
+#popup .content .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup .content .inputBox input
+{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 15px;
+    outline: none;
+    font-size: 2vh;
+}
+
+#popup .content .inputBox input[type="submit"]
+{
+    max-width: 150px;
+    background: rgb(205, 205, 205);
+    color: black;
+    border: none;
+    border-radius: 30px;
+}
+
+.close
+{
+    position: absolute;
+    transform: scale(35%);
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
