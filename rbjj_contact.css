@@ -12,27 +12,17 @@
       */
 
       /*Body Styles*/
-/* *
-{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-} */
+.newsletter ul li{
+    color: #333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-/* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-items: center;
-
-} */
-
-.btn 
+.btn
 {
     position:relative;
-    padding: 15px 20px;
-    background: grey;
-    font-size: 1vh;
+    padding: 25px 30px;
+    background:rgb(205, 205, 205);
+    font-size: 2vh;
     display:inline-block ;
     text-decoration: none;
     color: black;
@@ -45,9 +35,12 @@
 
 }
 
+
 .btn:hover
 {
     letter-spacing: 4px;
+    background-color:rgb(229, 230, 231);
+    
 }
 
 #popup
@@ -133,11 +126,16 @@
     border-radius: 30px;
 }
 
+#popup .content .inputBox input[type="submit"]:hover {
+    background: rgb(229, 230, 231);
+
+}
+
 .close
 {
     position: absolute;
-    transform: scale(35%);
-    top: 5px;
-    right: 5px;
+    transform: scale(55%);
+    top: -80px;
+    right: -50px;
     cursor: pointer;
 }
