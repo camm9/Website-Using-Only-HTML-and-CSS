@@ -11,10 +11,13 @@
    
       */
 /*HTML and Body Styles*/
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
 
 html {
     background-color: white;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Catamaran', sans-serif;
   }
   
   
