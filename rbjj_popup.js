@@ -11,7 +11,7 @@ Filename: rbjj_java.js
 
 
 
-Create a size chart for product that pops up in a window??
+Create a newsletter that pops up in a window
 
 */
 

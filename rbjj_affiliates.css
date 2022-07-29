@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*
+         CSIS 1280 Multimedia Web Development
+   
+         Project: Resenha BJJ Website
+         Author: Catherine Methven
+         Date:   June 8 2022
+   
+         Filename: rbjj_affiliates.css
+   
+      */
+/*HTML and Body Styles*/
+
+
+p{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.affiliates p {
+    margin-left: 30%;
+    margin-right: 30%;
+}
