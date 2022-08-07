@@ -12,6 +12,9 @@
       */
 
       /*Body Styles*/
+h2{
+    margin-top: 5%;
+}
 .newsletter ul li{
     color: #333;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -139,3 +142,21 @@
     right: -50px;
     cursor: pointer;
 }
+
+/*Responsive Design*/
+@media screen and (max-width: 600px){
+iframe{
+    transform: scale(60%);
+    
+}
+.map {
+    display: flex;
+}
+
+}
+  
+  @media screen and (max-width:992px) {
+
+    
+    
+  }

@@ -48,10 +48,7 @@ article  img {
   border-radius: 30px;
 }
 
-article  p {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  
-}
+
 
 .product h1 {
   margin-bottom: 0%;
@@ -132,6 +129,33 @@ article  p {
     }
   }
   
+
+  /*Responsive Design*/
+@media screen and (max-width: 600px){
+  .product{
+    display: inline;
+    
+  }
+
+  form{
+    width: 100%;
+
+}
+}
+
+@media screen and (max-width:992px) {
+  form{
+    width: 100%;
+
+}
+.product{
+  display: inline;
+  
+}
+
+
+}
+
   /* body > * {
     outline: 2px dashed red;
   }

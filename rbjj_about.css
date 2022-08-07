@@ -13,83 +13,86 @@
 /*HTML and Body Styles*/
 
 /* Grid Styles */
-
 .grid {
-  display: flex;
-  width: 100%;
-  margin: 0;
-  justify-content: center;
-  text-align: center;
+  display: grid;
+  grid-template-areas: 
+  'image des'
+  'image des';
+  grid-template-columns: 40% 60%;
+  width: 90%;
+  margin: auto;
+  
+
 }
 
-.grid p {
-  background-color: rgb(215, 215, 215);
-  opacity: 80%;
+.des {
+  margin: 0%;
+
+}
+
+.des p{
+  margin: 8%;
+  background-color: lightgray;
   border-radius: 30px;
-  width: 40%;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding: 10px;
-  margin: 0;
-  position: relative;
-  left: 29%;
+  padding: 2%;
   
 }
 
-.grid h4{
-  font-weight: lighter;
-}
+
+
+
 
 /* HTML and Body styles */
+h1{
+  margin-top: 5%;
+}
 
-section > img, div > img {
+h4 {
+  margin-top: 0%;
+}
+
+img {
   border-radius: 30px;
 }
+p {
+  font-size: 1em;
+}
+
 
 /* Article Styles */
-article {
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
+
 
 /* Aside Styles */
 
-aside  p {
-  background-color: rgb(215, 215, 215);
-  opacity: 80%;
-  border-radius: 30px;
-  width: 20%;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding: 10px;
-  margin: 0;
-  position: relative;
-  left: 39%;
-  
-}
-
-
-
-aside>section>img {
-  margin-top: 1em;
-  margin-bottom: 1em;
+aside p {
+  margin: 0 10% 1% 10%;
 }
 
 
 /* Mobile Styles */
-@media only screen and (max-width: 480px){
-  .responsive {
-    max-width:40%;
-    height: auto;
-  }
+/*Responsive Design*/
+@media screen and (max-width: 600px){
+  .grid{
 
-  .grid {
-    display: inline;
+    display:list-item;
+    
   }
-
  
 }
 
-/* body > * {
+@media screen and (max-width:992px) {
+  .grid{
+
+    display:list-item;
+    
+  }
+}
+
+
+
+ /* body > * {
   outline: 2px dashed red;
+
 }
 
 section > * {
@@ -98,4 +101,4 @@ section > * {
 
 div > * {
     outline: 2px dashed green;
-} */
+}  */

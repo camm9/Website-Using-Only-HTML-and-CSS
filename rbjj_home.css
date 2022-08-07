@@ -12,6 +12,12 @@
       */
 /*HTML and Body Styles*/
 
+.videos > h1{
+  text-align: center;
+  margin-top: 5%;
+
+}
+
 
 .latestVideos {
   
@@ -89,8 +95,24 @@ li img{
   align-items: center;
 }
 
+/*Responsive Design*/
+@media screen and (max-width: 600px){
+  .affiliates{
+    display: block;
+    
+  }
+}
 
+@media screen and (max-width:992px) {
+  .affiliates{
+    display: inline;
 
+}
+.latestVideos{
+  display: inline;
+  max-width: 100%;
+}
+}
 
 
 
