@@ -51,7 +51,7 @@ h4 {
   margin-top: 0%;
 }
 
-img {
+div > img, aside > img {
   border-radius: 30px;
 }
 p {
@@ -84,6 +84,7 @@ aside p {
   .grid{
 
     display:list-item;
+    list-style-type: none;
     
   }
 }

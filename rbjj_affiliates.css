@@ -24,6 +24,10 @@ p{
     margin-right: 30%;
 }
 
+.affiliates a:hover {
+    filter:contrast(85%)
+  }
+
 /*Responsive Design*/
 @media screen and (max-width: 600px){
     .affiliates p {
